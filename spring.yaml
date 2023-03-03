@@ -1,0 +1,15 @@
+version: '3'
+services:
+  elastic:
+    image: rasenshuriken/elasticsearch_no_security:8.6.1
+    ports:
+      - "9200:9200"
+  tourism-api:
+    image: tourismapi
+    ports:
+      - "8080:8080"
+
+
+
+
+
