@@ -21,7 +21,7 @@ public class ElasticSearchController {
     }
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/getCustomer")
-    ResponseEntity<Object> getAllCustomers() throws IOException{
+    public ResponseEntity<Object> getAllCustomers() throws IOException{
         List<Customer> customers= elasticSearchQuery.viewAllDocuments();
         return new ResponseEntity<>(customers, HttpStatus.OK);
     }
