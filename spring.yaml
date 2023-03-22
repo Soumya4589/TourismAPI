@@ -5,7 +5,7 @@ services:
     ports:
       - "9200:9200"
   tourism-api:
-    image: tourismapi
+    image: soumya4589/repo
     ports:
       - "8080:8080"
 
